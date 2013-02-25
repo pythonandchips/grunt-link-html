@@ -38,6 +38,45 @@ grunt.initConfig({
 })
 ```
 
+Then in your html pages add the derectives on where to place css and javascript.
+
+```html
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- begin:css -->
+    <!-- end:css -->
+  </head>
+  <body>
+    <!-- begin:js -->
+    <!-- end:js -->
+  </body>
+</html>
+```
+
+After running the task it will modify the html file with links and script tags inserted between the directives.
+
+
+```html
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- begin:css -->
+    <link rel="stylesheet" type="text/css" herf="reset.css">
+    <link rel="stylesheet" type="text/css" herf="awesome_styling.css">
+    <!-- end:css -->
+  </head>
+  <body>
+    <!-- begin:js -->
+    <script src="jquery.js"></script>
+    <script src="awesome_stuff.js"></script>
+    <!-- end:js -->
+  </body>
+</html>
+```
+
 ### Options
 
 #### options.cwd
@@ -50,4 +89,4 @@ Path to where to reference all files from (maybe be used for a CDN later).
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+0.1.0 - Initial release.
