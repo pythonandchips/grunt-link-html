@@ -29,7 +29,7 @@ grunt.initConfig({
       // Target-specific file lists and/or options go here.
       jsFiles: ['path/to/js/files.js']
       cssFiles: ['path/to/css/files.css']
-      targetFiles: ['path/to/html/files.html']
+      targetHtml: ['path/to/html/files.html']
       options: {
         cwd: 'public'
       },
