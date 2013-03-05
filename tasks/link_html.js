@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 
     var options = this.options({
       expand: true,
-      cwd: ''
+      cwd: '.'
     });
 
     //TODO: test this method away from the rest of the code. not sure how to do that yet.

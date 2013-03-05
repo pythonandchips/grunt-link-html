@@ -1,7 +1,7 @@
 {
   "name": "grunt-link-html",
   "description": "Insert css and Javascript links into html file",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "homepage": "https://github.com/pythonandchips/grunt-link-html",
   "author": {
     "name": "Colin Gemmell",
