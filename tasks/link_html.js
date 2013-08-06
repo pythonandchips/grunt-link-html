@@ -51,7 +51,7 @@ module.exports = function(grunt) {
       var content = {html: grunt.file.read(options.cwd + '/' + filepath)};
       var skipCss = processIncludes(filepath, content, 'css', cssIncludes);
       var skipJs = processIncludes(filepath, content, 'js', jsIncludes);
-      if(!skipJs && !skipCss){
+      if(!(skipJs && skipCss)){
         grunt.log.ok('Writing file '+ filepath);
         grunt.file.write(options.cwd + '/' + filepath, content.html);
       }
