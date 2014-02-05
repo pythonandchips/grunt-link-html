@@ -38,7 +38,7 @@ grunt.initConfig({
 })
 ```
 
-Then in your html pages add the derectives on where to place css and javascript.
+Then in your html pages add the directives on where to place css and javascript.
 
 ```html
 <!doctype html>
