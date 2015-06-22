@@ -43,7 +43,7 @@ module.exports = function(grunt) {
       return skip;
     };
 
-    var cssIncludes = includes('<link rel="stylesheet" type="text/css" href="<%= file %>">', this.data.cssFiles, options);
+    var cssIncludes = includes('<link rel="stylesheet" type="text/css" href="<%= file %>" />', this.data.cssFiles, options);
     var jsIncludes = includes('<script src="<%= file %>"></script>', this.data.jsFiles, options);
     var targetFiles = grunt.file.expand(options, this.data.targetHtml);
 
